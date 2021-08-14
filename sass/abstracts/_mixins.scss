@@ -1,0 +1,88 @@
+@mixin prefix($property, $parameters...) {
+  @each $prefix in '', -webkit-, -moz-, -ms-, -o- {
+    #{$prefix}#{$property}: $parameters;
+  }
+}
+@mixin w-h($w, $h) {
+  width: $w;
+  height: $h;
+}
+@mixin p($p) {
+  padding: $p;
+}
+@mixin p-l($p) {
+  padding-left: $p;
+}
+@mixin p-r($p) {
+  padding-right: $p;
+}
+@mixin p-t($p) {
+  padding-top: $p;
+}
+@mixin p-b($p) {
+  padding-bottom: $p;
+}
+@mixin m-l($m) {
+  margin-left: $m;
+}
+@mixin m-r($m) {
+  margin-right: $m;
+}
+@mixin m-t($m) {
+  margin-top: $m;
+}
+@mixin m-b($m) {
+  margin-bottom: $m;
+}
+@mixin br($property,$value){
+  $property: $value;
+}
+@mixin ta($value){
+  text-align: $value;
+}
+@mixin sudo {
+  position: absolute;
+  content: '';
+}
+@mixin sudo-tl($t, $l) {
+  @include sudo();
+  top: $t;
+  left: $l;
+}
+@mixin sudo-tr($t, $r) {
+  @include sudo();
+  top: $t;
+  right: $r;
+}
+@mixin sudo-lb($l, $b) {
+  @include sudo();
+  left: $l;
+  bottom: $b;
+}
+@mixin sudo-rb($r, $b) {
+  @include sudo();
+  right: $r;
+  bottom: $b;
+}
+@mixin shadow($h, $v, $b, $c) {
+  @include prefix(box-shadow, $h $v $b $c);
+}
+@mixin shadow-inset($i, $h, $v, $b, $c) {
+  @include prefix(box-shadow, $i $h $v $b $c);
+}
+@mixin media($breakpoint){
+  @media (max-width: $breakpoint) {
+    @content;
+  }
+}
+@mixin font-size($fs-map) {
+  @each $fs-breakpoint, $fs-font-size in $fs-map {
+    @if $fs-breakpoint == null {
+      font-size: $fs-font-size;
+    } @else {
+      @media screen and (min-width: $fs-breakpoint) {
+        font-size: $fs-font-size;
+      }
+    }
+  }
+}

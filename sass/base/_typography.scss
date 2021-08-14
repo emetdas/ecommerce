@@ -1,0 +1,14 @@
+p {
+  @include font-size($p-font-sizes);
+}
+// heading-typography-start
+@each $proprites, $value in $heading {
+  #{$proprites} {
+    font-size: $value;
+  }
+}
+.text-center{
+  text-align: center;
+}
+// heading-typography-end
+

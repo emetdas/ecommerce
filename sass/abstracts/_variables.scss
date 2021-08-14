@@ -1,0 +1,33 @@
+$font-primary: 'Poppins', sans-serif;
+$container: 112rem;
+$nav-height: 6.5rem;
+// color-start
+$primary: #73841b;
+$btn-hover: #5a6813;
+$card-hover: rgb(255 255 255 / 24%);
+$secondary: #999;
+$secondary-light: rgb(148, 148, 148);
+$sell: #e30514;
+$sell-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 20% 50%);
+$white: #fff !default;
+$black: #000 !default;
+// color-end
+// heading-map
+$heading: (
+  'h1': 4rem,
+  'h2': 2.7rem,
+  'h3': 2.3rem,
+  'h4': 2rem,
+  'h5': 1.8rem,
+  'h6': 1.5rem,
+);
+// heading-map
+// p-map-star
+$p-font-sizes: (
+  null: 1.5rem,
+  480px: 1.6rem,
+  640px: 1.6rem,
+  1024px: 1.7rem,
+  1224px: 1.9rem,
+);
+// p-map-end
