@@ -1,0 +1,21 @@
+{
+  "name": "vegian-store",
+  "description": "description",
+  "authors": "Emet Das",
+  "version": "1.0.0",
+  "main": "index.html",
+  "scripts": {
+    "start": "node-sass sass/style.scss css/style.css -w",
+    "compress:css": "node-sass css/style.css css/compile.css --output-style compressed",
+    "dev": "parcel index.html",
+    "build": "parcel build index.html --out-dir production",
+    "install": "babel main.js --watch --out-dir js"
+  },
+  "dependencies": {
+    "@babel/cli": "^7.14.3",
+    "@babel/core": "^7.14.3",
+    "@babel/preset-env": "^7.14.2",
+    "parcel": "^1.12.4",
+    "parcel-bundler": "^1.12.5"
+  }
+}
