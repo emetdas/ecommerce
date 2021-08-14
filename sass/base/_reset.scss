@@ -26,8 +26,7 @@ html,body{
 }
 // all: unset; remove all css inbuild style
 a {
-    background-color: transparent;
-    color: $gray-900; 
+    background-color: transparent; 
 }
 div{
   @include font-size($p-font-sizes);
