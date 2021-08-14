@@ -1,127 +1,63 @@
-.container{
-    max-width: $container;
-    margin: 0 auto;
-    width: calc(100% - 2rem);
-    padding: 0 1rem !important;
+.container {
+  max-width: $container;
+  margin: 0 auto;
+  width: calc(100% - 2rem);
+  padding: 0 1rem !important;
 }
-
-// border-star
-@for $i from 1 through 3{
-    .round-#{$i}{ 
-        border-radius: $i#{rem};
-    }
+.bg-primary {
+  background: $primary;
 }
-.round-top-left{
-    border-top-left-radius: 1rem;
+// grid-&-flex-start
+.d-flex {
+  display: flex;
 }
-.round-top-right{
-    border-top-right-radius: 1rem;
+.flex-wrap {
+  flex-wrap: wrap;
 }
-.round-bottom-left{
-    border-bottom-left-radius: 1rem;
+.align-center{
+    align-items: center;
 }
-.round-bottom-right{
-    border-bottom-right-radius: 1rem;
+.jsc-sb {
+  justify-content: space-between;
 }
-.round-circle{
-    border-radius: 50%;
+.d-grid {
+  display: grid;
 }
-.border{
-    border: 0.1rem solid $gray-900;
-} 
-.border-hulf{
-    border: 0.2rem solid $gray-900;
-} 
-.border-1{
-    border: 0.3rem solid $gray-900;
+// grid-&-flex-end
+@for $i from 1 through 3 {
+  .round-#{$i} {
+    border-radius: $i#{rem};
+  }
 }
-.border-left{
-    border-left: 0.1rem solid $gray-900;
+.translate-middle {
+  @include prefix(transform, translate(-50%, -50%));
 }
-.border-top{
-    border-top: 0.1rem solid $gray-900;
+.float-left {
+  float: left;
 }
-.border-right{
-    border-right: 0.1rem solid $gray-900;
+.float-right {
+  float: right;
 }
-.border-bottom{
-    border-bottom: 0.1rem solid $gray-900;
+.star {
+  position: absolute;
+  left: 0;
 }
-.border-left-1{
-    border-left: 0.3rem solid $gray-900;
+.bottom {
+  position: absolute;
+  bottom: 0;
 }
-.border-top-1{
-    border-top: 0.3rem solid $gray-900;
+.top {
+  position: absolute;
+  top: 0;
 }
-.border-right-1{
-    border-right: 0.3rem solid $gray-900;
-}
-.border-bottom-1{
-    border-bottom: 0.3rem solid $gray-900;
-} 
-// border-end
-// box-shadow-star
-.box-shadow{
-    @include shadow(0,0rem,0.3rem,$gray-400);
-}
-.box-shadow-h-1{
-    @include shadow(0.5rem,0,0.5rem,$gray-400);
-}
-.box-shadow-h-2{
-    @include shadow(1rem,0,1rem,$gray-400);
-}
-.box-shadow-v-1{
-    @include shadow(0,0.5rem,0.5rem,$gray-400);
-}
-.box-shadow-v-2{
-    @include shadow(0,1rem,1rem,$gray-400);
-}
-.box-shadow-1{
-    @include shadow(0,0rem,0.5rem,$gray-400);
-}
-.box-shadow-2{
-    @include shadow(0,0rem,1rem,$gray-400);
-}
-.box-shadow-inset{
-    @include shadow-inset(inset,0,0rem,1rem,$gray-400);
-}
-.box-shadow-inset-v-1{ 
-    @include shadow-inset(inset,1rem,0rem,1rem,$gray-400);
-}
-.box-shadow-inset-h-1{
-    @include shadow-inset(inset,0,1rem,1rem,$gray-400);
-}
-// box-shadow-end
-// position-start
-.translate-middle{ 
-    @include prefix(transform,translate(-50%, -50%));
-}
-.float-left{
-    float: left;
-}
-.float-right{
-    float: right;
-}
-.star{
-    position: absolute;
-    left:0;
-}
-.bottom{
-    position: absolute;
-    bottom: 0;
-}
-.top{
-    position: absolute;
-    top:0;
-}
-.end{
-    position: absolute;
-    right:0;
+.end {
+  position: absolute;
+  right: 0;
 }
 // position-end
 // image-start
-.img-res{
-    width: 100%;
-    height: 100%;
+.img-res {
+  width: 100%;
+  height: 100%;
 }
 // image-end

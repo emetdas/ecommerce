@@ -1,0 +1,11 @@
+.top-nav {
+  height: $nav-height - 1.5rem;
+}
+.nav_item {
+  & li {
+    display: inline-block;
+  }
+}
+.dropdrown {
+  display: none;
+}

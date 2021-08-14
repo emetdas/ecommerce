@@ -21,7 +21,6 @@ html, body {
   scroll-behavior: smooth;
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
-  overflow-x: hidden;
   font-size: 62.5%;
   font-family: "Poppins", sans-serif; }
 
@@ -275,6 +274,24 @@ h6 {
   width: calc(100% - 2rem);
   padding: 0 1rem !important; }
 
+.bg-primary {
+  background: #73841b; }
+
+.d-flex {
+  display: flex; }
+
+.flex-wrap {
+  flex-wrap: wrap; }
+
+.align-center {
+  align-items: center; }
+
+.jsc-sb {
+  justify-content: space-between; }
+
+.d-grid {
+  display: grid; }
+
 .round-1 {
   border-radius: 1rem; }
 
@@ -283,124 +300,6 @@ h6 {
 
 .round-3 {
   border-radius: 3rem; }
-
-.round-top-left {
-  border-top-left-radius: 1rem; }
-
-.round-top-right {
-  border-top-right-radius: 1rem; }
-
-.round-bottom-left {
-  border-bottom-left-radius: 1rem; }
-
-.round-bottom-right {
-  border-bottom-right-radius: 1rem; }
-
-.round-circle {
-  border-radius: 50%; }
-
-.border {
-  border: 0.1rem solid #979797; }
-
-.border-hulf {
-  border: 0.2rem solid #979797; }
-
-.border-1 {
-  border: 0.3rem solid #979797; }
-
-.border-left {
-  border-left: 0.1rem solid #979797; }
-
-.border-top {
-  border-top: 0.1rem solid #979797; }
-
-.border-right {
-  border-right: 0.1rem solid #979797; }
-
-.border-bottom {
-  border-bottom: 0.1rem solid #979797; }
-
-.border-left-1 {
-  border-left: 0.3rem solid #979797; }
-
-.border-top-1 {
-  border-top: 0.3rem solid #979797; }
-
-.border-right-1 {
-  border-right: 0.3rem solid #979797; }
-
-.border-bottom-1 {
-  border-bottom: 0.3rem solid #979797; }
-
-.box-shadow {
-  box-shadow: 0 0rem 0.3rem #c0c0c0;
-  -webkit-box-shadow: 0 0rem 0.3rem #c0c0c0;
-  -moz-box-shadow: 0 0rem 0.3rem #c0c0c0;
-  -ms-box-shadow: 0 0rem 0.3rem #c0c0c0;
-  -o-box-shadow: 0 0rem 0.3rem #c0c0c0; }
-
-.box-shadow-h-1 {
-  box-shadow: 0.5rem 0 0.5rem #c0c0c0;
-  -webkit-box-shadow: 0.5rem 0 0.5rem #c0c0c0;
-  -moz-box-shadow: 0.5rem 0 0.5rem #c0c0c0;
-  -ms-box-shadow: 0.5rem 0 0.5rem #c0c0c0;
-  -o-box-shadow: 0.5rem 0 0.5rem #c0c0c0; }
-
-.box-shadow-h-2 {
-  box-shadow: 1rem 0 1rem #c0c0c0;
-  -webkit-box-shadow: 1rem 0 1rem #c0c0c0;
-  -moz-box-shadow: 1rem 0 1rem #c0c0c0;
-  -ms-box-shadow: 1rem 0 1rem #c0c0c0;
-  -o-box-shadow: 1rem 0 1rem #c0c0c0; }
-
-.box-shadow-v-1 {
-  box-shadow: 0 0.5rem 0.5rem #c0c0c0;
-  -webkit-box-shadow: 0 0.5rem 0.5rem #c0c0c0;
-  -moz-box-shadow: 0 0.5rem 0.5rem #c0c0c0;
-  -ms-box-shadow: 0 0.5rem 0.5rem #c0c0c0;
-  -o-box-shadow: 0 0.5rem 0.5rem #c0c0c0; }
-
-.box-shadow-v-2 {
-  box-shadow: 0 1rem 1rem #c0c0c0;
-  -webkit-box-shadow: 0 1rem 1rem #c0c0c0;
-  -moz-box-shadow: 0 1rem 1rem #c0c0c0;
-  -ms-box-shadow: 0 1rem 1rem #c0c0c0;
-  -o-box-shadow: 0 1rem 1rem #c0c0c0; }
-
-.box-shadow-1 {
-  box-shadow: 0 0rem 0.5rem #c0c0c0;
-  -webkit-box-shadow: 0 0rem 0.5rem #c0c0c0;
-  -moz-box-shadow: 0 0rem 0.5rem #c0c0c0;
-  -ms-box-shadow: 0 0rem 0.5rem #c0c0c0;
-  -o-box-shadow: 0 0rem 0.5rem #c0c0c0; }
-
-.box-shadow-2 {
-  box-shadow: 0 0rem 1rem #c0c0c0;
-  -webkit-box-shadow: 0 0rem 1rem #c0c0c0;
-  -moz-box-shadow: 0 0rem 1rem #c0c0c0;
-  -ms-box-shadow: 0 0rem 1rem #c0c0c0;
-  -o-box-shadow: 0 0rem 1rem #c0c0c0; }
-
-.box-shadow-inset {
-  box-shadow: inset 0 0rem 1rem #c0c0c0;
-  -webkit-box-shadow: inset 0 0rem 1rem #c0c0c0;
-  -moz-box-shadow: inset 0 0rem 1rem #c0c0c0;
-  -ms-box-shadow: inset 0 0rem 1rem #c0c0c0;
-  -o-box-shadow: inset 0 0rem 1rem #c0c0c0; }
-
-.box-shadow-inset-v-1 {
-  box-shadow: inset 1rem 0rem 1rem #c0c0c0;
-  -webkit-box-shadow: inset 1rem 0rem 1rem #c0c0c0;
-  -moz-box-shadow: inset 1rem 0rem 1rem #c0c0c0;
-  -ms-box-shadow: inset 1rem 0rem 1rem #c0c0c0;
-  -o-box-shadow: inset 1rem 0rem 1rem #c0c0c0; }
-
-.box-shadow-inset-h-1 {
-  box-shadow: inset 0 1rem 1rem #c0c0c0;
-  -webkit-box-shadow: inset 0 1rem 1rem #c0c0c0;
-  -moz-box-shadow: inset 0 1rem 1rem #c0c0c0;
-  -ms-box-shadow: inset 0 1rem 1rem #c0c0c0;
-  -o-box-shadow: inset 0 1rem 1rem #c0c0c0; }
 
 .translate-middle {
   transform: translate(-50%, -50%);
@@ -434,3 +333,12 @@ h6 {
 .img-res {
   width: 100%;
   height: 100%; }
+
+.top-nav {
+  height: 5rem; }
+
+.nav_item li {
+  display: inline-block; }
+
+.dropdrown {
+  display: none; }
