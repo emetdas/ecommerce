@@ -1,6 +1,6 @@
 {
   "name": "vegian-store",
-  "description": "description",
+  "description": "vegian-store food e-commerce website",
   "authors": "Emet Das",
   "version": "1.0.0",
   "main": "index.html",
@@ -9,14 +9,16 @@
     "compress:css": "node-sass css/style.css css/compile.css --output-style compressed",
     "dev": "parcel index.html",
     "build": "parcel build index.html --out-dir production",
-    "install": "babel main.js --watch --out-dir js"
+    "install": "babel js/script.js --watch --out-dir dist"
   },
-  "dependencies": {
+  "devDependencies": {
     "@babel/cli": "^7.14.3",
     "@babel/core": "^7.14.3",
     "@babel/preset-env": "^7.14.2",
-    "@fortawesome/fontawesome-free": "^5.15.4",
     "parcel": "^1.12.4",
     "parcel-bundler": "^1.12.5"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4"
   }
 }
