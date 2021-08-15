@@ -33,7 +33,16 @@
 }
 .dropdrown-heandler:hover .dropdrown {
   display: block;
+  animation: feadin 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) ease-in;
   transition: all 0.5s ease-in;
+}
+@keyframes feadin {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .dropdrown-heandler .dropdrown {
   z-index: 2;
@@ -81,14 +90,14 @@ input {
     }
     & .search-icon {
       background: $icon-box;
-      top: 0.4rem;
       width: 2.5rem;
       height: 2.5rem;
+      top: 0.5rem;
       cursor: pointer;
       text-align: center;
-      line-height: 3rem;
+      line-height: 2.5rem;
       position: absolute;
-      font-size: 3.4rem;
+      font-size: 1.9rem;
       right: 1rem;
     }
   }
@@ -119,9 +128,5 @@ input {
       color: $primary;
     }
   }
-}
-ion-icon {
-  font-size: 2rem;
-  --ionicon-stroke-width: 4.6rem;
 }
 // mid-nav-end

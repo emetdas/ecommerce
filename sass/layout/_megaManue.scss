@@ -1,16 +1,113 @@
 .navigation {
   height: $nav-height;
 }
-.mega-item {
-  display: inline-flex;
-  padding: 0.5em 1em;
-  cursor: pointer;
-  & .icons-down {
-    display: inline-block;
-    padding-left: 0.3rem;
+.nav-item {
+  display: inline-block;
+  padding: 0.1rem 0;
+  &:not(:first-child) {
+    padding: 0.1rem 1.5rem;
+  }
+  & a {
+    color: $black;
   }
 }
-
-.help-icon {
-  width: 2.5rem;
+.nav_drop {
+  position: relative;
+}
+.grid-manue {
+  top: 100%;
+  left: 0%;
+  transition: all 0.2s ease-in-out 0s;
+  margin-top: 1rem;
+  position: absolute;
+  display: grid;
+  padding: 1rem;
+  gap: 1rem;
+  width: max-content;
+  animation: navfead 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  @include shadow(0, 0, 1rem, $icon-box);
+}
+@keyframes navfead {
+  0% {
+    transform: translateY(5rem);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.nav_drop:hover .nav-dropdown-1 {
+  opacity: 1;
+  visibility: visible;
+}
+.nav_drop:hover .nav-dropdown-2 {
+  opacity: 1;
+  visibility: visible;
+}
+.nav_drop:hover .nav-dropdown-3 {
+  opacity: 1;
+  visibility: visible;
+}
+.nav_drop:hover .nav-dropdown-4 {
+  opacity: 1;
+  visibility: visible;
+}
+.nav-dropdown-1 {
+  opacity: 0;
+  visibility: hidden;
+  @extend .grid-manue;
+  grid-template-columns: repeat(4, 1fr);
+  @media (max-width: 1000px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width: 420px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.nav-dropdown-2 {
+  opacity: 0;
+  visibility: hidden;
+  @extend .grid-manue;
+  grid-template-columns: repeat(4, 1fr);
+  @media (max-width: 1000px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width: 420px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.nav-dropdown-3 {
+  opacity: 0;
+  visibility: hidden;
+  @extend .grid-manue;
+  grid-template-columns: repeat(4, 1fr);
+  @media (max-width: 1000px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width: 420px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+.nav-dropdown-4 {
+  opacity: 0;
+  visibility: hidden;
+  @extend .grid-manue;
+  grid-template-columns: repeat(4, 1fr);
+  @media (max-width: 1000px) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width: 420px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }

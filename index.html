@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>vegian-store</title>
     <link rel="shortcut icon" href="images/vector2.svg" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+    />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -25,7 +29,7 @@
               <li><a href="#!">ABOUT US</a></li>
               <li><a href="#!">CONTACT US</a></li>
               <li class="dropdrown-heandler">
-                ACCOUNT <ion-icon name="chevron-down-outline"></ion-icon>
+                ACCOUNT <i class="fa fa-angle-down"></i>
                 <ul class="dropdrown">
                   <li>Registar / Login</li>
                   <li>Checkout</li>
@@ -35,7 +39,7 @@
                 </ul>
               </li>
               <li class="dropdrown-heandler">
-                BDT <ion-icon name="chevron-down-outline"></ion-icon>
+                BDT <i class="fa fa-angle-down"></i>
                 <ul class="dropdrown">
                   <li>IND</li>
                   <li>USA</li>
@@ -50,44 +54,170 @@
         <div class="logo">Vegian</div>
         <div class="search d-flex">
           <input type="text" placeholder="Search Product" />
-          <ion-icon
-            name="search-outline"
-            size="large"
-            class="search-icon"
-          ></ion-icon>
+          <i class="fa fa-search search-icon"></i>
         </div>
         <div class="mid_nav_icon d-flex gap-1">
           <div class="icon-notification">
-            <ion-icon name="heart-outline" class="notification"></ion-icon>
+            <i class="far fa-heart notification"></i>
             <span>0</span>
           </div>
           <div class="icon-notification">
-            <ion-icon name="bag-outline" class="notification"></ion-icon>
+            <i class="fa fa-shopping-bag notification"></i>
             <span>2</span>
           </div>
         </div>
       </div>
 
-      <nav class="navigation">
+      <nav class="navigation d-flex align-center">
         <div class="container d-flex jsc-sb">
-          <ul class="megaManue">
-            <li class="mega-item">
-              Home <ion-icon name="chevron-down-outline" class="icons-down"></ion-icon>
+          <ul class="manuebar">
+            <li class="nav-item nav_drop">
+              <a href="#!">Home <i class="fa fa-angle-down"></i></a>
+              <ul class="nav-dropdown-1">
+                <div class="nav-dropdown-item-box">
+                  <span class="nav-item-heading"> Fresh Food</span>
+                  <li>Fruit & Nut</li>
+                  <li>Snack Foods</li>
+                  <li>Organics Nut Gifts</li>
+                  <li>Non-Dairy</li>
+                  <li>Delicius Chiken Hotdogs</li>
+                </div>
+                <div class="nav-dropdown-item-box">
+                  <span class="nav-item-heading"> MixedFruits</span>
+                  <li>Oranges</li>
+                  <li>Ghee Beverages</li>
+                  <li>Ranch Salad</li>
+                  <li>Fresh Avocado</li>
+                  <li>Fresh Blueberry</li>
+                </div>
+                <div class="nav-dropdown-item-box">
+                  <span class="nav-item-heading"> Bananas & Plantains</span>
+                  <li>Fresh Gala</li>
+                  <li>Fifts Mixed Fruits</li>
+                  <li>Fresh Organic</li>
+                  <li>West Indian Onionsalad</li>
+                  <li>Vegetable Tomato</li>
+                </div>
+                <div class="nav-dropdown-item-box">
+                  <span class="nav-item-heading"> Apples Berries</span>
+                  <li>Pears Produce</li>
+                  <li>Fresh Green Orange</li>
+                  <li>Blackberry 100%Organic</li>
+                  <li>Vegetable Italian Salad</li>
+                  <li>Special Corn Noodels</li>
+                </div>
+              </ul>
             </li>
-            <li class="mega-item">
-              Shop <ion-icon name="chevron-down-outline" class="icons-down"></ion-icon>
+            <li class="nav-item nav_drop">
+              <a href="#!">Shop <i class="fa fa-angle-down"></i></a>
+              <ul class="nav-dropdown-2">
+                <div class="nav-dropdown-item-box">
+                  <span class="nav-item-heading"> Fresh Food</span>
+                  <li>Fruit & Nut</li>
+                  <li>Snack Foods</li>
+                  <li>Organics Nut Gifts</li>
+                  <li>Non-Dairy</li>
+                  <li>Delicius Chiken Hotdogs</li>
+                </div>
+                <div class="nav-dropdown-item-box">
+                  <span class="nav-item-heading"> MixedFruits</span>
+                  <li>Oranges</li>
+                  <li>Ghee Beverages</li>
+                  <li>Ranch Salad</li>
+                  <li>Fresh Avocado</li>
+                  <li>Fresh Blueberry</li>
+                </div>
+                <div class="nav-dropdown-item-box">
+                  <span class="nav-item-heading"> Bananas & Plantains</span>
+                  <li>Fresh Gala</li>
+                  <li>Fifts Mixed Fruits</li>
+                  <li>Fresh Organic</li>
+                  <li>West Indian Onionsalad</li>
+                  <li>Vegetable Tomato</li>
+                </div>
+                <div class="nav-dropdown-item-box">
+                  <span class="nav-item-heading"> Apples Berries</span>
+                  <li>Pears Produce</li>
+                  <li>Fresh Green Orange</li>
+                  <li>Blackberry 100%Organic</li>
+                  <li>Vegetable Italian Salad</li>
+                  <li>Special Corn Noodels</li>
+                </div>
+              </ul>
             </li>
-            <li class="mega-item">
-              Collection <ion-icon name="chevron-down-outline" class="icons-down"></ion-icon>
+            <li class="nav-item nav_drop">
+              <a href="#!">Collection <i class="fa fa-angle-down"></i></a>
+              <ul class="nav-dropdown-3">
+                <div class="nav-dropdown-item-box">
+                  <span class="nav-item-heading"> Fresh Food</span>
+                  <li>Fruit & Nut</li>
+                  <li>Snack Foods</li>
+                  <li>Organics Nut Gifts</li>
+                  <li>Non-Dairy</li>
+                  <li>Delicius Chiken Hotdogs</li>
+                </div>
+                <div class="nav-dropdown-item-box">
+                  <span class="nav-item-heading"> MixedFruits</span>
+                  <li>Oranges</li>
+                  <li>Ghee Beverages</li>
+                  <li>Ranch Salad</li>
+                  <li>Fresh Avocado</li>
+                  <li>Fresh Blueberry</li>
+                </div>
+                <div class="nav-dropdown-item-box">
+                  <span class="nav-item-heading"> Bananas & Plantains</span>
+                  <li>Fresh Gala</li>
+                  <li>Fifts Mixed Fruits</li>
+                  <li>Fresh Organic</li>
+                  <li>West Indian Onionsalad</li>
+                  <li>Vegetable Tomato</li>
+                </div>
+                <div class="nav-dropdown-item-box">
+                  <span class="nav-item-heading"> Apples Berries</span>
+                  <li>Pears Produce</li>
+                  <li>Fresh Green Orange</li>
+                  <li>Blackberry 100%Organic</li>
+                  <li>Vegetable Italian Salad</li>
+                  <li>Special Corn Noodels</li>
+                </div>
+              </ul>
             </li>
-            <li class="mega-item">
-              Pages <ion-icon name="chevron-down-outline" class="icons-down"></ion-icon>
-            </li>
-            <li class="mega-item">
-              Blogs <ion-icon name="chevron-down-outline" class="icons-down"></ion-icon>
-            </li>
-            <li class="mega-item">
-              Buy VegistHOT <ion-icon name="chevron-down-outline" class="icons-down"></ion-icon>
+            <li class="nav-item nav_drop">
+              <a href="#!">Buy Vegist <i class="fa fa-angle-down"></i></a>
+              <ul class="nav-dropdown-4">
+                <div class="nav-dropdown-item-box">
+                  <span class="nav-item-heading"> Fresh Food</span>
+                  <li>Fruit & Nut</li>
+                  <li>Snack Foods</li>
+                  <li>Organics Nut Gifts</li>
+                  <li>Non-Dairy</li>
+                  <li>Delicius Chiken Hotdogs</li>
+                </div>
+                <div class="nav-dropdown-item-box">
+                  <span class="nav-item-heading"> MixedFruits</span>
+                  <li>Oranges</li>
+                  <li>Ghee Beverages</li>
+                  <li>Ranch Salad</li>
+                  <li>Fresh Avocado</li>
+                  <li>Fresh Blueberry</li>
+                </div>
+                <div class="nav-dropdown-item-box">
+                  <span class="nav-item-heading"> Bananas & Plantains</span>
+                  <li>Fresh Gala</li>
+                  <li>Fifts Mixed Fruits</li>
+                  <li>Fresh Organic</li>
+                  <li>West Indian Onionsalad</li>
+                  <li>Vegetable Tomato</li>
+                </div>
+                <div class="nav-dropdown-item-box">
+                  <span class="nav-item-heading"> Apples Berries</span>
+                  <li>Pears Produce</li>
+                  <li>Fresh Green Orange</li>
+                  <li>Blackberry 100%Organic</li>
+                  <li>Vegetable Italian Salad</li>
+                  <li>Special Corn Noodels</li>
+                </div>
+              </ul>
             </li>
           </ul>
           <div class="help-line d-flex align-center gap-1">
@@ -100,23 +230,21 @@
             </div>
             <div class="help-hotline">
               <li>Hotline:</li>
-              <li>0123 456 789</li>
+              <li>0126 456 789</li>
             </div>
           </div>
         </div>
       </nav>
     </header>
+    <!-- hero-section -->
+    <section class="hero">
+      <div class="slider"></div>
+      <div class="box-item"></div>
+    </section>
+    <!-- hero-section -->
     <!-- Home-part-end -->
 
     <!-- Script-part-start -->
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
     <script src="js/script.js"></script>
     <!-- Script-part-end -->
   </body>
