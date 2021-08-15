@@ -1,3 +1,61 @@
 @media (max-width: 768px) {
-
+  // top-nav-start
+  .nav_item {
+    display: none;
+    transition: all 0.5s ease;
+  }
+  .nav-icon {
+    position: absolute;
+    right: 2rem;
+    display: block;
+    cursor: pointer;
+    & .line {
+      position: relative;
+      width: 3rem;
+      height: 0.2rem;
+      background: $white;
+      &::before,
+      &::after {
+        transition: all 0.5s ease;
+        @include sudo();
+        @include w-h(100%, 100%);
+        background: $white;
+      }
+      &.active {
+        background: transparent;
+      }
+      &.active::before {
+        transform: rotate(45deg);
+      }
+      &.active::after {
+        transform: rotate(-45deg);
+      }
+      &::before {
+        transform: translateY(-0.8rem);
+      }
+      &::after {
+        transform: translateY(0.8rem);
+      }
+    }
+  }
+  .nav_item.active {
+    transition: all 0.5s ease;
+    z-index: 10;
+    top: 4rem;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background: $primary;
+    position: absolute;
+    display: block;
+    & li {
+      display: block;
+    }
+  }
+  .dropdrown-heandler .dropdrown {
+    width: 100%;
+    left: 0;
+    z-index: 20;
+  }
+  // top-nav-end
 }

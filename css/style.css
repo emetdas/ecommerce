@@ -15,7 +15,8 @@
   -ms-font-smoothing: antialiased;
   -o-font-smoothing: antialiased; }
 
-html, body {
+html,
+body {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -388,3 +389,51 @@ h6 {
     color: #000; }
     .dropdrown-heandler .dropdrown li:hover {
       color: #73841b; }
+
+@media (max-width: 768px) {
+  .nav_item {
+    display: none;
+    transition: all 0.5s ease; }
+  .nav-icon {
+    position: absolute;
+    right: 2rem;
+    display: block;
+    cursor: pointer; }
+    .nav-icon .line {
+      position: relative;
+      width: 3rem;
+      height: 0.2rem;
+      background: #fff; }
+      .nav-icon .line::before, .nav-icon .line::after {
+        transition: all 0.5s ease;
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 100%;
+        background: #fff; }
+      .nav-icon .line.active {
+        background: transparent; }
+      .nav-icon .line.active::before {
+        transform: rotate(45deg); }
+      .nav-icon .line.active::after {
+        transform: rotate(-45deg); }
+      .nav-icon .line::before {
+        transform: translateY(-0.8rem); }
+      .nav-icon .line::after {
+        transform: translateY(0.8rem); }
+  .nav_item.active {
+    transition: all 0.5s ease;
+    z-index: 10;
+    top: 4rem;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background: #73841b;
+    position: absolute;
+    display: block; }
+    .nav_item.active li {
+      display: block; }
+  .dropdrown-heandler .dropdrown {
+    width: 100%;
+    left: 0;
+    z-index: 20; } }
