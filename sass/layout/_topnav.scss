@@ -36,6 +36,7 @@
   transition: all 0.5s ease-in;
 }
 .dropdrown-heandler .dropdrown {
+  z-index: 2;
   margin-top: 1.1rem;
   position: absolute;
   display: none;
@@ -54,3 +55,73 @@
     }
   }
 }
+input {
+  outline: none;
+}
+// mid-nav-start
+.midnav {
+  height: $nav-height;
+  border-bottom: 0.1rem solid $icon-box;
+  & .search {
+    position: relative;
+    width: 60%;
+    & input {
+      background: $icon-box;
+      height: 3.5rem;
+      width: 100%;
+      padding: 0.4rem 1rem;
+      border-radius: 2rem;
+      font-size: 1.4rem;
+      border: none;
+      border: 0.1rem solid transparent;
+      transition: all 0.5s ease;
+      &:focus {
+        border: 0.1rem solid $primary;
+      }
+    }
+    & .search-icon {
+      background: $icon-box;
+      top: 0.4rem;
+      width: 2.5rem;
+      height: 2.5rem;
+      cursor: pointer;
+      text-align: center;
+      line-height: 3rem;
+      position: absolute;
+      font-size: 3.4rem;
+      right: 1rem;
+    }
+  }
+  .icon-notification {
+    width: 4rem;
+    text-align: center;
+    height: 4rem;
+    line-height: 4.5rem;
+    background: $icon-box;
+    border-radius: 50%;
+    cursor: pointer;
+    & .notification {
+      position: relative;
+    }
+    & span {
+      position: absolute;
+      margin-top: -0.2rem;
+      width: 2rem;
+      height: 2rem;
+      line-height: 2rem;
+      background: $primary;
+      color: $white;
+      margin-left: -0.7rem;
+      border-radius: 50%;
+      font-size: 1.3rem;
+    }
+    &:hover .notification {
+      color: $primary;
+    }
+  }
+}
+ion-icon {
+  font-size: 2rem;
+  --ionicon-stroke-width: 4.6rem;
+}
+// mid-nav-end

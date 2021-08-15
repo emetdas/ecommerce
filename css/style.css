@@ -91,6 +91,9 @@ sup {
 img {
   border-style: none; }
 
+li {
+  font-size: 1.6rem; }
+
 button,
 input,
 optgroup,
@@ -284,6 +287,9 @@ h6 {
 .mr1 {
   margin-right: 1rem; }
 
+.gap-1 {
+  gap: 1rem; }
+
 .d-flex {
   display: flex; }
 
@@ -374,6 +380,7 @@ h6 {
   transition: all 0.5s ease-in; }
 
 .dropdrown-heandler .dropdrown {
+  z-index: 2;
   margin-top: 1.1rem;
   position: absolute;
   display: none;
@@ -389,6 +396,80 @@ h6 {
     color: #000; }
     .dropdrown-heandler .dropdrown li:hover {
       color: #73841b; }
+
+input {
+  outline: none; }
+
+.midnav {
+  height: 6.5rem;
+  border-bottom: 0.1rem solid #f4f4f4; }
+  .midnav .search {
+    position: relative;
+    width: 60%; }
+    .midnav .search input {
+      background: #f4f4f4;
+      height: 3.5rem;
+      width: 100%;
+      padding: 0.4rem 1rem;
+      border-radius: 2rem;
+      font-size: 1.4rem;
+      border: none;
+      border: 0.1rem solid transparent;
+      transition: all 0.5s ease; }
+      .midnav .search input:focus {
+        border: 0.1rem solid #73841b; }
+    .midnav .search .search-icon {
+      background: #f4f4f4;
+      top: 0.4rem;
+      width: 2.5rem;
+      height: 2.5rem;
+      cursor: pointer;
+      text-align: center;
+      line-height: 3rem;
+      position: absolute;
+      font-size: 3.4rem;
+      right: 1rem; }
+  .midnav .icon-notification {
+    width: 4rem;
+    text-align: center;
+    height: 4rem;
+    line-height: 4.5rem;
+    background: #f4f4f4;
+    border-radius: 50%;
+    cursor: pointer; }
+    .midnav .icon-notification .notification {
+      position: relative; }
+    .midnav .icon-notification span {
+      position: absolute;
+      margin-top: -0.2rem;
+      width: 2rem;
+      height: 2rem;
+      line-height: 2rem;
+      background: #73841b;
+      color: #fff;
+      margin-left: -0.7rem;
+      border-radius: 50%;
+      font-size: 1.3rem; }
+    .midnav .icon-notification:hover .notification {
+      color: #73841b; }
+
+ion-icon {
+  font-size: 2rem;
+  --ionicon-stroke-width: 4.6rem; }
+
+.navigation {
+  height: 6.5rem; }
+
+.mega-item {
+  display: inline-flex;
+  padding: 0.5em 1em;
+  cursor: pointer; }
+  .mega-item .icons-down {
+    display: inline-block;
+    padding-left: 0.3rem; }
+
+.help-icon {
+  width: 2.5rem; }
 
 @media (max-width: 768px) {
   .nav_item {

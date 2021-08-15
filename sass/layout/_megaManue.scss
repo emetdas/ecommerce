@@ -1,0 +1,16 @@
+.navigation {
+  height: $nav-height;
+}
+.mega-item {
+  display: inline-flex;
+  padding: 0.5em 1em;
+  cursor: pointer;
+  & .icons-down {
+    display: inline-block;
+    padding-left: 0.3rem;
+  }
+}
+
+.help-icon {
+  width: 2.5rem;
+}
