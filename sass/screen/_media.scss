@@ -57,5 +57,32 @@
     left: 0;
     z-index: 20;
   }
+  .nav-dropdown-1,
+  .nav-dropdown-2,
+  .nav-dropdown-3,
+  .nav-dropdown-4 {
+    top: 3rem;
+  }
+  .nav-dropdown-4 {
+    left: -100%;
+  }
   // top-nav-end
+}
+.manue-icon {
+  display: none;
+}
+@media (max-width: 630px) {
+  .manue-icon {
+    display: block;
+    background: $primary;
+    width: 3rem;
+    height: 3rem;
+    text-align: center;
+    color: $white;
+    line-height: 3rem;
+    border-radius: 50%;
+  }
+  .manuebar {
+    display: none;
+  }
 }
