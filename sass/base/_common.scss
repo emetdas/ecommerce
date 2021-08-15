@@ -7,6 +7,12 @@
 .bg-primary {
   background: $primary;
 }
+.text-white {
+  color: $white;
+}
+.mr1 {
+  margin-right: 1rem;
+}
 // grid-&-flex-start
 .d-flex {
   display: flex;
@@ -14,8 +20,8 @@
 .flex-wrap {
   flex-wrap: wrap;
 }
-.align-center{
-    align-items: center;
+.align-center {
+  align-items: center;
 }
 .jsc-sb {
   justify-content: space-between;

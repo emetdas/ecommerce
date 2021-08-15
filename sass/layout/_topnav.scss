@@ -1,11 +1,56 @@
 .top-nav {
-  height: $nav-height - 1.5rem;
+  height: $nav-height - 2.3rem;
+  & li {
+    cursor: pointer;
+  }
+}
+.blink {
+  animation: blink 0.7s cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite;
+}
+@keyframes blink {
+  from {
+    color: $primary;
+  }
+  to {
+    color: $white;
+  }
+}
+.top-nav li a {
+  color: $white;
 }
 .nav_item {
   & li {
+    color: $white;
     display: inline-block;
   }
 }
-.dropdrown {
+.top-nav li {
+  padding: 1rem 0.7rem;
+}
+.dropdrown-heandler {
+  position: relative;
+  transition: all 0.5s ease-in;
+}
+.dropdrown-heandler:hover .dropdrown {
+  display: block;
+  transition: all 0.5s ease-in;
+}
+.dropdrown-heandler .dropdrown {
+  margin-top: 1.1rem;
+  position: absolute;
   display: none;
+  width: max-content;
+  background: $white;
+  padding: 1rem;
+  box-shadow: 0 0 0.3rem 0 $gray-400;
+  transition: all 0.5s ease-in;
+  & li {
+    padding: 0.5rem 0;
+    display: block;
+    font-size: 1.5rem;
+    color: $black;
+    &:hover {
+      color: $primary;
+    }
+  }
 }
